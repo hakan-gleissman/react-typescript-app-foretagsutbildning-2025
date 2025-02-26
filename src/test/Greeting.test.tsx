@@ -10,26 +10,3 @@ describe("Greeting Component", () => {
     expect(headingElement).toBeInTheDocument();
   });
 });
-/*
-npm install -D vitest @testing-library/react @testing-library/jest-dom
-npm i --save-dev @types/jest
-npm i jsdom (typ så)
-
-tsconfig.json:
-,
-  "compilerOptions": {
-    // ... dina övriga inställningar
-    "types": ["vitest/globals"]
-  }
-vite.config.ts:
-import { defineConfig } from "vitest/config"; istället för första raden
-och:
-test: {
-    globals: true,
-    environment: "jsdom",
-    setupFiles: "./src/setupTests.ts",
-  },
-
-  filen setupTests.ts:
-  import '@testing-library/jest-dom';
-*/
